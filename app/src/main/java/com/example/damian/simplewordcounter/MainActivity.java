@@ -36,7 +36,7 @@ public class MainActivity extends ActionBarActivity {
         arrayList = new ArrayList<String>(Arrays.asList(text_input.getText().toString().split(",")));
 
         Set<String> uniqueSet = new HashSet<String>(arrayList);
-        result_area.setText("");
+        resultado = "";
         for (String identificador : uniqueSet) {
             resultado += identificador + ": " + Collections.frequency(arrayList, identificador) + "\n";
         }
